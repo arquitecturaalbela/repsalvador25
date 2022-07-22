@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforma de portal en rúa República do Salvador 25</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+	<style>
+    	html, body, #panorama {
+      		margin: 0;
+      		width: 100%;
+      		height: 100%;
+    	}
+  	</style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+	"default": {
+		"firstScene": "Vista1",
+		"title": "Reforma de portal en rúa República do Salvador 25",
+		"author": "CD Construcciones",
+		"authorURL": "https://www.cdconstrucciones.es/",
+		"sceneFadeDuration": 1000,
+		"autoLoad": true,
+		//"orientationOnByDefault": true,
+		//"hotSpotDebug": true,
+	},
+	"scenes": {
+		"Vista1": {
+			"type": "equirectangular",
+			"panorama": "https://i.imgur.com/S4lHSs9.jpg",
+    		"pitch": 0,
+    		"yaw": 0,
+    		"hfov": 100,
+			"hotSpots": [
+				{
+					"pitch": 9.617101270066225,
+					"yaw": 167.5550120829736,
+					"type": "scene",
+					"text": "Vista zona ascensor",
+					"sceneId": "Vista2"
+				},
+				{
+		            "pitch": -2.3376626687632696,
+        		    "yaw": -29.962655173315238,
+					"type": "info",
+					"text": "Barandilla de acero inoxidable"
+		        },
+                {
+                    "pitch": -4.666130076334626,
+                    "yaw": -156.66399177514307,
+                    "type": "info",
+					"text": "Iluminación LED"
+                },
+                {
+                    "pitch": 13.354788508810387,
+                    "yaw": -198.50400842006894,
+                    "type": "info",
+                    "text": "Buzones Arregui modelo Milenio"
+                },
+                {
+                    "pitch": 3.2551984160186294,
+                    "yaw": 30.626957418399133,
+                    "type": "info",
+                    "text": "Pavimento y paredes de mármol crema marfil"
+                },
+			]
+		},
+		"Vista2": {
+			"type": "equirectangular",
+			"panorama": "https://i.imgur.com/7HfZ9tT.jpg",
+    		"pitch": 0,
+    		"yaw": 0,
+    		"hfov": 100,
+			"hotSpots": [
+				{
+					"pitch": -3.161672365175755,
+					"yaw": -11.621994048097392,
+					"type": "scene",
+					"text": "Vista acceso",
+					"sceneId": "Vista1"
+				},
+                {
+                    "pitch": -1.3073208521930493,
+                    "yaw": -94.16091888700606,
+                    "type": "info",
+                    "text": "Barandilla de acero inoxidable con vidrio"
+                },
+                {
+                    "pitch": -9.629904984034251,
+                    "yaw": -111.94954414254573,
+                    "type": "info",
+                    "text": "Panel retroiluminado con imagen"
+                },
+                {
+                    "pitch": 1.7825000532708213,
+                    "yaw": -155.4470902184533,
+                    "type": "info",
+                    "text": "Puerta automática de acero inoxidable"
+                },
+                {
+                    "pitch": 1.0866833823122857,
+                    "yaw": -183.3929214161936,
+                    "type": "info",
+                    "text": "Puertas de madera lacada"
+                },
+                {
+                    "pitch": 26.213667802250495,
+                    "yaw": -25.04005591113247,
+                    "type": "info",
+                    "text": "Falso techo continuo ocultando las vigas"
+                },
+			]
+		}
+	}
+});
+</script>
+
+</body>
+</html>
